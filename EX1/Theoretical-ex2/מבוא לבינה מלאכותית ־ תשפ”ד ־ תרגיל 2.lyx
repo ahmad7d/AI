@@ -1,0 +1,1358 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize custom
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 5mm
+\topmargin 10mm
+\rightmargin 5mm
+\bottommargin 15mm
+\secnumdepth -2
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Title
+מבוא לבינה מלאכותית ־ תשפ”ד ־ תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Author
+תז :
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+324059856,207063108
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה מספר
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+:
+\end_layout
+
+\begin_layout Subsection
+סעיף א : 
+\end_layout
+
+\begin_layout Standard
+כדי להמיר 
+\begin_inset Formula $Q\rightarrow P$
+\end_inset
+
+ לצרת 
+\begin_inset Formula $CNF$
+\end_inset
+
+ נשתמש בחוקים התחביריים ובמקבילות הלוגיות שלמדנו בכיתה : 
+\begin_inset Formula 
+\[
+Q\rightarrow P\equiv\lnot Q\vee P
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סעיף ב :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(P\rightarrow\lnot Q\right)\Longleftrightarrow R$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A\Longleftrightarrow B$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(A\rightarrow B\right)\wedge\left(B\rightarrow A\right)$
+\end_inset
+
+ , לכן : 
+\begin_inset Formula 
+\[
+\left(\left(P\rightarrow\lnot Q\right)\rightarrow R\right)\wedge\left(R\rightarrow\left(P\rightarrow\lnot Q\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ראינו לעייל ש- 
+\begin_inset Formula $A\rightarrow B\equiv\lnot A\vee B$
+\end_inset
+
+ , לכן :
+\begin_inset Formula 
+\[
+\left(\left(P\rightarrow\lnot Q\right)\rightarrow R\right)\equiv\left(\lnot\left(P\rightarrow\lnot Q\right)\vee R\right)\equiv\left(\lnot\left(\lnot P\vee\lnot Q\right)\vee R\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(R\rightarrow\left(P\rightarrow\lnot Q\right)\right)\equiv\left(\lnot R\vee\left(P\rightarrow\lnot Q\right)\right)\equiv\left(\lnot R\vee\left(\lnot P\vee\lnot Q\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ראינו בכיתה ש- 
+\begin_inset Formula $\lnot\left(\lnot A\vee\lnot B\right)\equiv A\wedge B$
+\end_inset
+
+ , לכן : 
+\begin_inset Formula 
+\[
+\left(\lnot\left(\lnot P\vee\lnot Q\right)\vee R\right)\equiv\left(\left(P\wedge Q\right)\vee R\right)
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+גם ניתן להרחיב את זה , ונקבל : 
+\begin_inset Formula 
+\[
+\left(\left(P\wedge Q\right)\vee R\right)\equiv\left(P\vee R\right)\wedge\left(Q\vee R\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+צורה סופית : 
+\begin_inset Formula 
+\[
+\left(P\vee R\right)\wedge\left(Q\vee R\right)\wedge\left(\lnot R\vee\lnot P\vee\lnot Q\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סעיף ג :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lnot\left(P\wedge\lnot Q\right)\rightarrow\left(\lnot R\vee\lnot Q\right)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Enumerate
+ראינו לעייל ש- 
+\begin_inset Formula $A\rightarrow B\equiv\lnot A\vee B$
+\end_inset
+
+ , לכן : 
+\begin_inset Formula 
+\[
+\lnot\left(P\wedge\lnot Q\right)\rightarrow\left(\lnot R\vee\lnot Q\right)\equiv\lnot\lnot\left(P\wedge\lnot Q\right)\vee\left(\lnot R\vee\lnot Q\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $double\quad negation\quad elimination$
+\end_inset
+
+ ל 
+\begin_inset Formula $\lnot\lnot\left(P\wedge\lnot Q\right)$
+\end_inset
+
+ , נקבל : 
+\begin_inset Formula 
+\[
+\left(P\wedge\lnot Q\right)\vee\left(\lnot R\vee\lnot Q\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Distributive\quad Law$
+\end_inset
+
+ , 
+\begin_inset Formula $A\vee\left(B\wedge C\right)\equiv\left(A\vee B\right)\wedge\left(A\vee C\right)$
+\end_inset
+
+ , לכן : 
+\begin_inset Formula 
+\[
+\left(P\wedge\lnot Q\right)\vee\left(\lnot R\vee\lnot Q\right)\equiv\left(\left(\lnot R\vee\lnot Q\right)\vee P\right)\wedge\left(\left(\lnot R\vee\lnot Q\right)\vee\lnot Q\right)\equiv
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(\lnot R\vee\lnot Q\vee P\right)\wedge\left(\lnot R\vee\lnot Q\vee\lnot Q\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ראינו בכיתה ש- 
+\begin_inset Formula $\lnot Q\vee\lnot Q$
+\end_inset
+
+ שווה ל- 
+\begin_inset Formula $\lnot Q$
+\end_inset
+
+ , לכן נקבל הצורה הסופית הבאה : 
+\begin_inset Formula 
+\[
+\left(\lnot R\vee\lnot Q\vee P\right)\wedge\left(\lnot R\vee\lnot Q\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סעיף ד :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lnot\left(P\Longleftrightarrow\lnot Q\right)\rightarrow R$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A\Longleftrightarrow B$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(A\rightarrow B\right)\wedge\left(B\rightarrow A\right)$
+\end_inset
+
+ , לכן מכיוון ש- 
+\begin_inset Formula $\left(P\Longleftrightarrow\lnot Q\right)$
+\end_inset
+
+ : 
+\begin_inset Formula 
+\[
+\left(P\rightarrow\lnot Q\right)\wedge\left(\lnot Q\rightarrow P\right)
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+וגם ראינו ש- 
+\begin_inset Formula $A\rightarrow B\equiv\lnot A\vee B$
+\end_inset
+
+ לכן נקבל : 
+\begin_inset Formula 
+\[
+\lnot\left(\left(\lnot P\vee\lnot Q\right)\wedge\left(Q\vee P\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lnot\left(A\wedge B\right)\equiv\lnot A\vee\lnot B$
+\end_inset
+
+ , אז : 
+\begin_inset Formula 
+\[
+\lnot\left(\lnot P\vee\lnot Q\right)\vee\left(Q\vee P\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(P\wedge Q\right)\vee\left(\lnot Q\wedge\lnot P\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נחזור לצורה המקורית : 
+\begin_inset Formula 
+\[
+\lnot\left(P\Longleftrightarrow\lnot Q\right)\rightarrow R\equiv\left(\lnot\left(P\Longleftrightarrow\lnot Q\right)\right)\vee R
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נשים את הצורה שקיבלנו לעייל ונקבל : 
+\begin_inset Formula 
+\[
+\left(\left(P\wedge Q\right)\vee\left(\lnot Q\wedge\lnot P\right)\right)\vee R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+כעת נשתמש ב- 
+\begin_inset Formula $A\vee\left(B\wedge C\right)\equiv\left(A\vee B\right)\wedge\left(A\vee C\right)$
+\end_inset
+
+ ונקבל :
+\begin_inset Formula 
+\[
+\left(\left(P\wedge Q\right)\vee R\right)\wedge\left(\left(\lnot Q\wedge\lnot P\right)\vee R\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נוציא את 
+\begin_inset Formula $R$
+\end_inset
+
+ מכל צד ונקבל : 
+\begin_inset Formula 
+\[
+\left(\left(P\vee R\right)\wedge\left(Q\vee R\right)\right)\wedge\left(\left(\lnot Q\vee R\right)\wedge\left(\lnot P\vee R\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Downarrow
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(P\vee R\right)\wedge\left(Q\vee R\right)\wedge\left(\lnot Q\vee R\right)\wedge\left(\lnot P\vee R\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סעיף ה :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lnot\left(P\rightarrow\left(\lnot R\vee\lnot Q\right)\right)\rightarrow\lnot R$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Enumerate
+מכיוון ש- 
+\begin_inset Formula $A\rightarrow B\equiv\lnot A\vee B$
+\end_inset
+
+ , נקבל: 
+\begin_inset Formula 
+\[
+P\rightarrow\left(\lnot R\vee\lnot Q\right)\equiv\lnot P\vee\lnot R\vee\lnot Q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+שלילת הביטוי הפנימי ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\lnot\left(A\vee B\vee C\right)\equiv\lnot A\wedge\lnot B\wedge\lnot C$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\lnot\left(\lnot P\vee\lnot R\vee\lnot Q\right)\equiv\lnot\lnot P\wedge\lnot\lnot R\wedge\lnot\lnot Q\equiv P\wedge R\wedge Q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכן קיבלנו : 
+\begin_inset Formula 
+\[
+\lnot\left(P\wedge R\wedge Q\right)\rightarrow\lnot R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נשתמש ב- 
+\begin_inset Formula $A\rightarrow B\equiv\lnot A\vee B$
+\end_inset
+
+ ומנקבל : 
+\begin_inset Formula 
+\[
+\lnot\lnot\left(P\wedge R\wedge Q\right)\vee\lnot R
+\]
+
+\end_inset
+
+ נשתמש ב- 
+\begin_inset Formula $de\thickspace morgan$
+\end_inset
+
+ על 
+\begin_inset Formula $\lnot\left(P\wedge R\wedge C\right)$
+\end_inset
+
+ : 
+\begin_inset Formula 
+\[
+\left(\lnot P\vee\lnot R\vee\lnot Q\right)\vee\lnot R
+\]
+
+\end_inset
+
+ לכן נקבל הצורה הסופית : 
+\begin_inset Formula 
+\[
+\lnot P\vee\lnot R\vee\lnot Q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה מספר
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+:
+\end_layout
+
+\begin_layout Subsection
+בעיה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ : 
+\end_layout
+
+\begin_layout Itemize
+משתנים והצהרות:
+\begin_inset Formula 
+\[
+Let\thickspace R\thickspace represent"It\thickspace rains"
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Let\thickspace U\thickspace represent\thickspace"Nitay\thickspace carries\thickspace anumbrella."
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Let\thickspace W\thickspace represent\thickspace"Nitaygetswet."
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+G\thickspace is\thickspace defined\thickspace as\thickspace"Nitay\thickspace carries\thickspace anumbrella",\thickspace so\thickspace G\equiv U.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $CNF\thickspace Clauses$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $If\thickspace it\thickspace rains,Nitay\thickspace carries\thickspace anumbrella$
+\end_inset
+
+ : 
+\begin_inset Formula 
+\[
+R\rightarrow U
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+CNF:\lnot R\vee U
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $If\thickspace Nitay\thickspace has\thickspace an\thickspace umbrella,\thickspace he\thickspace doesn't\thickspace get\thickspace wet.$
+\end_inset
+
+ : 
+\begin_inset Formula 
+\[
+U\rightarrow\lnot W
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+CNF:\lnot U\vee\lnot W
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $If\thickspace it\thickspace doesn't\thickspace rain,\thickspace Nitay\thickspace doesn't\thickspace get\thickspace wet.$
+\end_inset
+
+ : 
+\begin_inset Formula 
+\[
+\lnot R\rightarrow\lnot W
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+CNF:R\vee\lnot W
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Nitay\thickspace is\thickspace not\thickspace wet.$
+\end_inset
+
+ : 
+\begin_inset Formula 
+\[
+\lnot W
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\uuline on
+המשימה
+\size default
+\uuline default
+ : אנחנו צריכים להסיק 
+\begin_inset Formula $U$
+\end_inset
+
+ )כלומר 
+\begin_inset Formula $G$
+\end_inset
+
+( .
+\end_layout
+
+\begin_layout Paragraph
+שלבי אלגוריתם הרזולוציה: 
+\end_layout
+
+\begin_layout Itemize
+התחל עם מאגר הידע : 
+\begin_inset Formula 
+\[
+\lnot R\vee U
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lnot U\vee\lnot W
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R\vee\lnot W
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lnot W
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נשתמש ב-
+\begin_inset Formula $\lnot W$
+\end_inset
+
+ כדי לפשט : רזולוציה של 
+\begin_inset Formula $\lnot U\vee\lnot W$
+\end_inset
+
+ עם 
+\begin_inset Formula $\lnot W$
+\end_inset
+
+ מחזיר 
+\begin_inset Formula $\lnot U$
+\end_inset
+
+ )מכיוון ש- 
+\begin_inset Formula $\lnot W$
+\end_inset
+
+ מוחק את 
+\begin_inset Formula $\lnot W$
+\end_inset
+
+( .
+\end_layout
+
+\begin_layout Enumerate
+אותו דבר עם 
+\begin_inset Formula $R$
+\end_inset
+
+ עבור 
+\begin_inset Formula $R\vee\lnot W$
+\end_inset
+
+ עם 
+\begin_inset Formula $\lnot W$
+\end_inset
+
+ מתקבל 
+\begin_inset Formula $R$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Enumerate
+עם 
+\begin_inset Formula $\lnot R\vee U$
+\end_inset
+
+ ו-
+\begin_inset Formula $R$
+\end_inset
+
+ נקבל את 
+\begin_inset Formula $U$
+\end_inset
+
+ )מכיוון ש- 
+\begin_inset Formula $\lnot R$
+\end_inset
+
+ מוחק את 
+\begin_inset Formula $\lnot R$
+\end_inset
+
+( .
+\end_layout
+
+\begin_layout Itemize
+קיבלנו : משפט 
+\begin_inset Formula $U$
+\end_inset
+
+ הוכח , ולכן 
+\begin_inset Formula $G$
+\end_inset
+
+ אמותה
+\end_layout
+
+\begin_layout Subsection
+בעיה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ : 
+\end_layout
+
+\begin_layout Itemize
+משתנים והצהרות: 
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $D$
+\end_inset
+
+ מייצגת "לאמית יש כלב."
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $C$
+\end_inset
+
+ מייצגת "לאמית יש חתול."
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מייצגת "לאמית יש עכברים."
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $S$
+\end_inset
+
+ מייצגת "לאמית יש בעיות שינה."
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G$
+\end_inset
+
+ מוגדרת כ "אם לאמית יש בעיות שינה, אז אין לו עכברים," כלומר 
+\begin_inset Formula 
+\[
+G\equiv S\rightarrow\lnot M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $CNF\thickspace Clauses$
+\end_inset
+
+ : 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D$
+\end_inset
+
+ כי כל הכלבים נובחים בלילה, וזה משפיע על שינתו של אמי לא נוצר סעיף ישיר
+ מכך.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+C\rightarrow\lnot M
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+CNF:\lnot C\vee\lnot M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+S\rightarrow\lnot D
+\]
+
+\end_inset
+
+ כיוון שאמית לא יכול להחזיק בעלי חיים שעושים רעש בלילה 
+\begin_inset Formula 
+\[
+CNF:\lnot S\vee\lnot D
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אמית יש לו כלב או חתול : 
+\begin_inset Formula 
+\[
+C\vee D
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\uuline on
+המשימה
+\size default
+\uuline default
+ : להוכיח 
+\begin_inset Formula $G\equiv S\rightarrow\lnot M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+שלבי אלגוריתם הרזולוציה: 
+\end_layout
+
+\begin_layout Itemize
+נפשט 
+\begin_inset Formula $G\equiv S\rightarrow\lnot M$
+\end_inset
+
+ ל 
+\begin_inset Formula $CNF$
+\end_inset
+
+ :
+\begin_inset Formula 
+\[
+\lnot S\vee\lnot M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נשתמש ב- 
+\begin_inset Formula $D\vee C$
+\end_inset
+
+ )אמית יש לו כלב או חתול(
+\end_layout
+
+\begin_layout Enumerate
+רזולוציה עם 
+\begin_inset Formula $\lnot S\vee\lnot D$
+\end_inset
+
+ מפשטת 
+\begin_inset Formula $C$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $S$
+\end_inset
+
+ )אם אין לאמית בעיות , אין כלב(
+\end_layout
+
+\begin_layout Enumerate
+זולוציה של 
+\begin_inset Formula $\lnot C\vee\lnot M$
+\end_inset
+
+ עם 
+\begin_inset Formula $C$
+\end_inset
+
+ שהתקבל תחת 
+\begin_inset Formula $S$
+\end_inset
+
+ , נקבל 
+\begin_inset Formula $\lnot M$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $S$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Paragraph
+מסקנה לבעיה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+: 
+\end_layout
+
+\begin_layout Standard
+אם לאמית יש בעיות שינה 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא לא יכול להחזיק כלב, מה שמוביל לכך שיש לו חתול 
+\begin_inset Formula $C$
+\end_inset
+
+ שבתורו מוביל לכך שאין לו עכברים 
+\begin_inset Formula $\lnot M$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $G$
+\end_inset
+
+ התקיים כאשר 
+\begin_inset Formula $\lnot M$
+\end_inset
+
+ מוכח תחת התנאי 
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
