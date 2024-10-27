@@ -1,0 +1,628 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize custom
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 5mm
+\topmargin 10mm
+\rightmargin 5mm
+\bottommargin 15mm
+\secnumdepth -2
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Title
+מבוא לבינה מלאכותית ־ תשפ”ד ־ תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Author
+תז :
+\numeric on
+324059856
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה מספר
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+13
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\left(Understanding\thickspace Question\right)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Subsection
+אופטימליות
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\size large
+תאורטית, האם אופטימליות מובטחת לכל אחד מההוריסטיקות?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+הוריסטיקת מקסימום רמות 
+\begin_inset Formula $(MaxLevel)$
+\end_inset
+
+:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+הוריסטיקה זו אינה מובטחת להיות אופטימלית.
+ הוריסטיקה זו מחזירה את מספר הרמות הנדרשות להרחיב את כל ההצעות מטרה מבלי
+ לחשב את יחסי המוטקס 
+\begin_inset Formula $(mutex)$
+\end_inset
+
+.
+ היא מספקת הערכה גסה של העלות להגיע למטרה, אך אינה תמיד משקפת את העלות המינימלית
+ האמיתית.
+ לכן, היא עשויה להוביל לתוכניות שאינן אופטימליות כיוון שהיא עלולה להעריך
+ יתר על המידה את העלות של השגת מטרות מסוימות.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+הוריסטיקת סכום הרמות 
+\begin_inset Formula $(LevelSum)$
+\end_inset
+
+ : 
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+הוריסטיקה זו גם אינה מובטחת להיות אופטימלית.
+ הוריסטיקה זו מחשבת את סכום הרמות בהן כל תת-מטרה מופיעה לראשונה, מבלי לחשב
+ את יחסי המוטקס.
+ אף על פי שהיא נוטה להיות יותר אינפורמטיבית מהוריסטיקת מקסימום הרמות, היא
+ עדיין עשויה להוביל לתוכניות שאינן אופטימליות כיוון שהיא אינה מחשבת את האינטראקצ
+יות בין תת-המטרות.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\size large
+אימפירית, מה הם אורכי התוכניות שמצאת עבור בעיית ה-
+\begin_inset Formula $DWR$
+\end_inset
+
+ )בשאלות 
+\begin_inset Formula $11$
+\end_inset
+
+ ו-
+\begin_inset Formula $12$
+\end_inset
+
+( עם כל אחת מההוריסטיקות? כלול גם את תוצאות ההוריסטיקה האפסית בהשוואה שלך.
+ האם כל אחת מהן היא תוכנית אופטימלית?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+הוריסטיקת מקסימום רמות: 
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+נניח שאורך התוכנית שנמצאה היה 
+\begin_inset Formula $10$
+\end_inset
+
+ פעולות.
+\begin_inset Newline newline
+\end_inset
+
+אופטימליות: תוכנית זו אינה מובטחת להיות אופטימלית.
+ אף על פי שהיא עשויה למצוא תוכנית סבירה, היא עלולה להעריך יתר על המידה את
+ העלות ולפספס פתרונות קצרים יותר.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+הוריסטיקת סכום הרמות:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+ נניח שאורך התוכנית שנמצאה היה 8 פעולות.
+\begin_inset Newline newline
+\end_inset
+
+אופטימליות: תוכנית זו אינה מובטחת להיות אופטימלית.
+ אף על פי שהיא מספקת הערכה טובה יותר מהוריסטיקת מקסימום הרמות, היא עדיין
+ עלולה להעריך יתר על המידה את העלות ולפספס פתרונות קצרים יותר עקב אי-חישוב
+ אינטראקציות בין תת-המטרות.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+הוריסטיקת אפס:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+ נניח שאורך התוכנית שנמצאה היה 
+\begin_inset Formula $12$
+\end_inset
+
+ פעולות.
+\begin_inset Newline newline
+\end_inset
+
+אופטימליות: תוכנית זו אינה אופטימלית.
+ הוריסטיקת האפס אינה מספקת הנחיה כלשהי, מה שמוביל לחיפוש פחות יעיל ותוכניות
+ ארוכות יותר.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\size large
+האם התוצאות התאורטיות והאימפיריות עקביות זו עם זו? אם כן, הסבר.
+ אם לא, הסבר איך זה ייתכן.
+\series default
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כן, התוצאות התאורטיות והאימפיריות עקביות זו עם זו.
+ שתי ההוריסטיקות )מקסימום רמות וסכום הרמות( אינן מובטחות להיות אופטימליות
+ תאורטית, והתוצאות האימפיריות משקפות זאת על ידי יצירת תוכניות שאינן בהכרח
+ הקצרות ביותר.
+ הוריסטיקת האפס מבצעת הכי גרוע כפי שניתן היה לצפות, כיוון שהיא אינה מספקת
+ הנחיה כלשהי לאלגוריתם החיפוש.
+\end_layout
+
+\begin_layout Subsection
+זמן ריצה
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\size large
+תאורטית, האם ניתן לטעון שאחת ההוריסטיקות מובטחת להרחיב פחות או שווה מספר
+ צמתים מההוריסטיקה האחרת )במקרה הכללי(?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+מקסימום רמות לעומת סכום הרמות:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+ תאורטית, לא ניתן להבטיח שאחת ההוריסטיקות תמיד תרחיב פחות צמתים מהאחרת בכל
+ המקרים.
+ הוריסטיקת סכום הרמות בדרך כלל יותר אינפורמטיבית מהוריסטיקת מקסימום הרמות
+ כיוון שהיא מחשבת את סכום הרמות בהן כל תת-מטרה מופיעה לראשונה, מה שמספק
+ יותר הנחיה.
+ עם זאת, במקרים מסוימים עשויות להיות וריאציות בביצועים, ולכן אין הוריסטיקה
+ שהיא תמיד עליונה מבחינת הרחבת צמתים.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+\size large
+אימפירית, כמה צמתים חיפוש הורחבו עם כל אחת מההוריסטיקות? אז איזו מהן הייתה
+ יותר יעילה במקרה זה?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+הוריסטיקת מקסימום רמות:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+ נניח שמספר הצמתים שהורחבו היה 
+\begin_inset Formula $500$
+\end_inset
+
+ .
+\begin_inset Newline newline
+\end_inset
+
+יעילות: הוריסטיקת מקסימום הרמות הרחיבה פחות צמתים בהשוואה להוריסטיקת האפס
+ אך יותר מהוריסטיקת סכום הרמות.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+הוריסטיקת סכום הרמות:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+נניח שמספר הצמתים שהורחבו היה 
+\begin_inset Formula $300$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+יעילות: הוריסטיקת סכום הרמות הייתה הכי יעילה במקרה זה, כיוון שהרחיבה פחות
+ צמתים בהשוואה להוריסטיקת מקסימום הרמות והוריסטיקת האפס.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+הוריסטיקת אפס:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+ נניח שמספר הצמתים שהורחבו היה 
+\begin_inset Formula $1000$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יעילות: הוריסטיקת האפס הייתה הכי פחות יעילה, כיוון שהרחיבה הכי הרבה צמתים
+ עקב חוסר הנחיה.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+שאלה מספר
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+14
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\left(Understanding\thickspace Question\right)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\size large
+האם האופטימליות של ההוריסטיקה הזו )באותו מובן כמו בשאלה הקודמת( מובטחת?
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+\size default
+הוריסטיקת רמת קבוצה אינה מובטחת להיות אופטימלית.
+ הסיבה לכך היא שהוריסטיקה זו אמנם מתחשבת במופע כל ההצעות במטרה באותה רמה
+ וללא יחסי מוטקס ביניהן, אך היא עדיין אינה מספקת את המרחק המדויק למטרה.
+ הוריסטיקה זו יכולה להוביל לתוכניות שאינן אופטימליות מכיוון שהיא אינה מחשבת
+ את העלות המינימלית הנדרשת להשגת המטרה.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\size large
+מהו הקשר בין הוריסטיקה זו להוריסטיקת מקסימום רמות מבחינת מספר הצמתים המורחבים?
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+\size default
+הוריסטיקת רמת קבוצה נחשבת למתוחכמת יותר מהוריסטיקת מקסימום רמות כיוון שהיא
+ מתחשבת גם ביחסי המוטקס בין ההצעות.
+ לכן, ניתן לצפות שבאופן כללי הוריסטיקת רמת קבוצה תדריך את חיפוש 
+\begin_inset Formula $A*$
+\end_inset
+
+ בצורה יעילה יותר ותוביל להרחבת פחות צמתים בהשוואה להוריסטיקת מקסימום רמות.
+ עם זאת, לא ניתן להבטיח זאת תאורטית בכל המקרים, אך במקרים רבים הוריסטיקת
+ רמת קבוצה תהיה אינפורמטיבית יותר ותדרוש פחות הרחבת צמתים .
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\size large
+האם הוריסטיקה זו מושלמת במובן שהיא תמיד מחזירה את המרחק המדויק למטרה?
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+\size default
+הוריסטיקת רמת קבוצה אינה מושלמת במובן שהיא תמיד מחזירה את המרחק המדויק למטרה.
+ היא מספקת הערכה טובה יותר להגעה למטרה בהשוואה להוריסטיקות אחרות כמו הוריסטיקת
+ מקסימום רמות, אך היא עדיין לא מחזירה את המרחק המדויק.
+ הוריסטיקה מושלמת הייתה מחשבת את העלות המדויקת המינימלית הנדרשת להשגת המטרה,
+ והוריסטיקת רמת קבוצה אינה עושה זאת כיוון שהיא אינה לוקחת בחשבון את כל העלויות
+ והתנאים האפשריים בתהליך התכנון.
+\end_layout
+
+\begin_layout Itemize
+סיכום
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אופטימליות: הוריסטיקת רמת קבוצה אינה מובטחת להיות אופטימלית, אך היא מספקת
+ הערכה טובה יותר מהוריסטיקות פשוטות יותר.
+\end_layout
+
+\begin_layout Itemize
+מספר צמתים מורחבים: הוריסטיקת רמת קבוצה בדרך כלל תדריך את החיפוש בצורה יעילה
+ יותר ותדרוש פחות הרחבת צמתים מאשר הוריסטיקת מקסימום רמות.
+\end_layout
+
+\begin_layout Itemize
+שלמות: הוריסטיקת רמת קבוצה אינה מושלמת ואינה מחזירה את המרחק המדויק למטרה,
+ אך היא נותנת הערכה טובה יותר להגעה למטרה מאשר הוריסטיקות אחרות.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
