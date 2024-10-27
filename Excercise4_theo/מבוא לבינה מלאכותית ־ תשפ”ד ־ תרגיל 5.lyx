@@ -1,0 +1,823 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize custom
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 5mm
+\topmargin 10mm
+\rightmargin 5mm
+\bottommargin 15mm
+\secnumdepth -2
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Title
+מבוא לבינה מלאכותית ־ תשפ”ד ־ תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Author
+אחמד דלאשה
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+324059856
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\mid$
+\end_inset
+
+ עבד נסאר
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+207063108
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\size largest
+\lang english
+Theoretical questions :
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Question number 8 :
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The computational complexity of the Value Iteration 
+\begin_inset Formula $\left(VI\right)$
+\end_inset
+
+ algorithm depends on several factors, including the number of states 
+\begin_inset Formula $\left|S\right|$
+\end_inset
+
+, the number of actions 
+\begin_inset Formula $\left|A\right|$
+\end_inset
+
+, the number of iterations k, and the cost of computing the expected value
+ for each state-action pair.
+ Let's break down the complexity step by step.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Factors Influencing Complexity
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Number of States 
+\begin_inset Formula $\left(\left|S\right|\right)$
+\end_inset
+
+: The total number of states in the Markov Decision Process (MDP).
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Number of Actions 
+\begin_inset Formula $\left(\left|A\right|\right)$
+\end_inset
+
+: The total number of actions available in each state.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Number of Iterations 
+\begin_inset Formula $\left(k\right)$
+\end_inset
+
+: The number of iterations the algorithm runs until convergence.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Transition and Reward Computation: For each state-action pair, we need to
+ compute the expected value, which involves summing over the possible next
+ states.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Step-by-Step Complexity Analysis
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Initialization:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Initializing the value function V for all states takes 
+\begin_inset Formula $O\left(\left|S\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang english
+Value Update in Each Iteration:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+For each state s, for each action a, we need to compute the expected value:
+\begin_inset Formula 
+\[
+V\left(s\right)\leftarrow max_{a}\sum_{s^{'}}P\left(s^{'}\mid s,a\right)\left[R\left(s,a,s^{'}\right)+\gamma V\left(s^{'}\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+This involves: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+Transition Probability Summation: Summing over all possible next states
+ 
+\begin_inset Formula $s^{'}$
+\end_inset
+
+ to compute the expected value.
+ If we assume the number of next states is proportional to 
+\begin_inset Formula $\left|S\right|$
+\end_inset
+
+, this summation takes 
+\begin_inset Formula $O\left(\left|S\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Maximization: Maximizing over all actions for each state, which takes 
+\begin_inset Formula $\left(O\left(A\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\lang english
+Total Cost per Iteration:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+For each state s, we consider all actions a, and for each action, we sum
+ over all next states 
+\begin_inset Formula $s^{'}$
+\end_inset
+
+ .
+ Therefore, the complexity per state-action pair is 
+\begin_inset Formula $O\left(\left|S\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+The total complexity per iteration is 
+\begin_inset Formula $O\left(\left|S\right|\times\left|A\right|\times\left|S\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang english
+Number of Iterations 
+\begin_inset Formula $\left(S\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang english
+The algorithm runs for 
+\begin_inset Formula $k$
+\end_inset
+
+ iterations until convergence.
+ In the worst case, 
+\begin_inset Formula $k$
+\end_inset
+
+ could be large, but for practical purposes, it's often a fixed number of
+ iterations or until the value function changes by less than a threshold
+ 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+
+\lang english
+Overall Complexity 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Combining these factors, the overall computational complexity of the Value
+ Iteration algorithm is:
+\begin_inset Formula 
+\[
+O\left(k\times\left|S\right|^{2}\times\left|A\right|\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Question number 9 : 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsection*{Discount Factor (
+\backslash
+(
+\backslash
+gamma
+\backslash
+))} 
+\backslash
+begin{itemize}     
+\backslash
+item 
+\backslash
+textbf{High (
+\backslash
+(
+\backslash
+gamma 
+\backslash
+approx 1
+\backslash
+))}: Values future rewards highly.
+ Encourages long-term planning and risk-taking for higher rewards (e.g., distant
+ exit with +10).
+     
+\backslash
+item 
+\backslash
+textbf{Low (
+\backslash
+(
+\backslash
+gamma 
+\backslash
+approx 0
+\backslash
+))}: Values immediate rewards more.
+ Encourages safer, short-term gains (e.g., close exit with +1).
+ 
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsection*{Noise} 
+\backslash
+begin{itemize}     
+\backslash
+item 
+\backslash
+textbf{High}: Increases action uncertainty.
+ Encourages risk-averse behavior to avoid unintended negative outcomes (e.g.,
+ avoiding the cliff).
+     
+\backslash
+item 
+\backslash
+textbf{Low}: Decreases action uncertainty.
+ Encourages taking direct and risky paths for higher rewards (e.g., crossing
+ the bridge).
+ 
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsection*{Living Reward} 
+\backslash
+begin{itemize}     
+\backslash
+item 
+\backslash
+textbf{High (positive)}: Rewards staying alive.
+ Encourages prolonged episodes and exploration, avoiding exits and risks.
+     
+\backslash
+item 
+\backslash
+textbf{Low (negative or zero)}: Penalizes each step.
+ Encourages quick resolution to minimize penalties, even if it means taking
+ risks (e.g., quickly reaching exits).
+ 
+\backslash
+end{itemize} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Question number 10 :
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsection*{Boltzmann Exploration (Softmax)}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+paragraph{Description:} In Boltzmann exploration, actions are selected based
+ on a probability distribution derived from the Q-values of the actions.
+ The probability of selecting an action 
+\backslash
+( a 
+\backslash
+) in state 
+\backslash
+( s 
+\backslash
+) is given by: 
+\backslash
+[ P(a|s) = 
+\backslash
+frac{e^{Q(s,a) / 
+\backslash
+tau}}{
+\backslash
+sum_{a'} e^{Q(s,a') / 
+\backslash
+tau}} 
+\backslash
+] where 
+\backslash
+( 
+\backslash
+tau 
+\backslash
+) is the temperature parameter controlling exploration.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+paragraph{Effects on Learning Process:}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}     
+\backslash
+item 
+\backslash
+textbf{Number of Times an Action is Selected:}     
+\backslash
+begin{itemize}         
+\backslash
+item 
+\backslash
+textbf{High Temperature (
+\backslash
+(
+\backslash
+tau
+\backslash
+))}: Actions are selected more uniformly, leading to extensive exploration.
+         
+\backslash
+item 
+\backslash
+textbf{Low Temperature (
+\backslash
+(
+\backslash
+tau
+\backslash
+))}: Actions with higher Q-values are selected more often, reducing exploration.
+     
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+item 
+\backslash
+textbf{Variability of the Estimated Q-values:}     
+\backslash
+begin{itemize}         
+\backslash
+item 
+\backslash
+textbf{High Temperature}: Results in varied Q-value estimates due to thorough
+ exploration.
+         
+\backslash
+item 
+\backslash
+textbf{Low Temperature}: Focuses on higher Q-value actions, leading to quicker
+ but potentially suboptimal convergence.
+     
+\backslash
+end{itemize} 
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+paragraph{Comparison to 
+\backslash
+(
+\backslash
+epsilon
+\backslash
+)-greedy:}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}     
+\backslash
+item 
+\backslash
+textbf{Exploration:}     
+\backslash
+begin{itemize}         
+\backslash
+item 
+\backslash
+(
+\backslash
+epsilon
+\backslash
+)-greedy: Selects a random action with probability 
+\backslash
+(
+\backslash
+epsilon
+\backslash
+), otherwise selects the best action.
+         
+\backslash
+item Boltzmann: Selects actions probabilistically based on Q-values, offering
+ refined exploration.
+     
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+item 
+\backslash
+textbf{Action Selection:}     
+\backslash
+begin{itemize}         
+\backslash
+item 
+\backslash
+(
+\backslash
+epsilon
+\backslash
+)-greedy: Can choose completely random actions during exploration.
+         
+\backslash
+item Boltzmann: More likely to select higher-valued actions, even during
+ exploration.
+     
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+item 
+\backslash
+textbf{Learning Variability:}     
+\backslash
+begin{itemize}         
+\backslash
+item 
+\backslash
+(
+\backslash
+epsilon
+\backslash
+)-greedy: High variability due to potentially poor action selection during
+ exploration.
+         
+\backslash
+item Boltzmann: More stable Q-value estimates due to focused exploration.
+     
+\backslash
+end{itemize} 
+\backslash
+end{itemize} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
